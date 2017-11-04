@@ -5,9 +5,10 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="http://placehold.it/150x100">
         </a>
         <ul class="site-navigation">
@@ -18,18 +19,18 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <section class="caption"
-        <p><span>Welcome</span>to the gorgeous</p>
-        <h1>Sedona</h1>
-        <p>"Because the Grand Canyon sucks!"</p>
-      </section>
-      <section class="features">
+    <main class="container-main">
+      <div class="caption">
+       <a class="header-logo" href="index.html">
+         <img src="http://placehold.it/150x150">
+       </a>        
+      </div>
+      <section class="description">
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
-      <section class="foto1">          
-          <figure class="gallery-content">
+      <section class="feature-1">          
+          <figure class="features-item">
             <img src="img/city.jpg/300x100">
             <figcaption>
                 <h3>Настоящий городок</h3>
@@ -57,8 +58,8 @@
             </li>
           </ul>
         </section>
-        <section class="foto2">          
-            <figure class="gallery-content">
+        <section class="feature-2">          
+            <figure class="features-item-2">
               <img src="img/canyon.jpg/300x100">
               <figcaption>
                   <h3>там есть мост дьявола</h3>
@@ -67,67 +68,80 @@
               </figcaption>
             </figure>
         </section>
-        <section class="dignity">
-            <ul class="dignity-list">
-              <li class="dignity-item">
+        <section class="feature-3">
+            <ul class="features-list">
+              <li class="features-item-3">
                 <h3>Небольшая площадь</h3>
                 <span>-№3-</span>
                 <p>Все достопримечательности нвходятся очень близко</p>
               </li>
-              <li class="dignity-item">
+              <li class="features-item-3">
                 <h3>Красивая дорога</h3>
                 <span>-№4-</span>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
-              <li class="dignity-item">
+              <li class="features-item-3">
                 <h3>Мало туристов</h3>
                 <span>-№5-</span>
                 <p>Большенство едет в Гранд Каньон и толпится там</p>
               </li>
             </ul>
           </section>
-          <section class="appointment">
+          <section class="form">
               <h2>Заинтересовались?</h2>
               <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          </section>
-          <section class="search-hotel">
-              <h3>Поиск гостиницы в Седоне</h3>
-          </section>
-          <section class="reservation">
-              <img src="img/map.jpg/300x300">
-              <form action="https://htmlacademy.ru" method="post"></form>
-              Дата заезда: 
-              <select name="entry">
-                  <option value="24apr">24 Апреля 2016</option>
-              </select>
-              Дата выезда:
-              <select name="departure">
-                  <option value="4july">4 июля 2016</option>
-              </select>
-              Взрослые:
-              <select name="adults">
-                  <option value="adilts-quantity">2</option>
-              </select>
-              Дети:
-              <select name="child">
-                  <option value="child-quantity">2</option>
-              </select>
-              <a class="buttom" href="hotels.html">Найти</a>
-          </section>
+              <button type="submit" class="search-button button">Поиск гостиницы в Седоне</button>
+              <form class="search" method="get" action="https://echo.htmlacademy.ru">
+                  <div class="form-item">
+                      <label for="check-in-date">Дата заезда:</label>
+                      <input type="text" name="check-in-date" id="check-in-date" value="24 апреля">
+                      <span class="calendar">
+                          <img src="img/calendar.jpg/50x50">
+                      </span>
+                  </div>
+                  <div class="form-item">
+                      <label for="check-out-date">Дата выезда:</label>
+                      <input type="text" name="check-out-date" id="check-out-date" value="4 июля 2017">
+                      <span class="calendar">
+                          <img src="img/calendar.jpg/50x50">
+                      </span>
+                  <div class="column-wrapper">
+                      <div class="form-item">
+                          <label for="adults">Взрослые:</label>
+                          <button class="minus" type="button">–</button>
+                          <input type="text" name="adults" value="2" id="adults" class="guest">
+                          <button class="plus" type="button">+</button>
+                      </div>
+                      <div class="form-item">
+                          <label for="children" class="child">Дети:</label>
+                          <button class="minus" type="button">–</button>
+                          <input type="text" name="children" value="0" id="children" class="guest">
+                          <button class="plus" type="button">+</button>
+                      </div>
+                  </div>
+                  <button type="submit" class="button submit-button">Найти</button>
+              </form>
+            </section>    
+            <div class="map"></div>
+          
     </main>
     <footer class="main-footer">
-          <a href="instagram.html">#visitsedona</a>
         <div class="footer-social">
+          <a href="instagram.html">#visitsedona</a>
           <ul>
             <li><a class="social-button" href="#">Твиттер</a></li>
             <li><a class="social-button" href="#">Фейсбук</a></li>
             <li><a class="social-button" href="#">Ютьюб</a></li>
           </ul>
-        </div>
-        <a class="button" href="https://htmlacademy.ru">website by
-            <img src="img/htmlacademy.jpeg/40x20">
-        </a>
-    </footer>    
+          <p class="footer-copyright">
+              <b>Website by</b>
+              <a class="button copyright-button" href="https://htmlacademy.ru">
+                  <img src="img/htmlacademy.it/40x20">
+              </a>
+          </p>
+      </div>
+    </footer> 
+  </div>   
 
 
 
