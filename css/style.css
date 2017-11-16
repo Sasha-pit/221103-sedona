@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: #000000;
+}
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+.description, 
+.service-item,
+.features-item-3, 
+.form {
+  text-align: center;
+}
+
+.description {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.feature-1,
+.feature-2 {
+  background-color: #83b4d3;
+}
+.feature-1 figcaption, 
+.feature-2 figcaption {
+  color: #ffffff;
+}
+.feature-1 h3,
+.feature-2 h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.feature-1 p, 
+.feature-2 h3 {
+  font-size: 14px;
+  line-height: 26px;
+}
+.service-list,
+.features-list {
+  list-style: none;
+}
+.service-item h3,
+.features-item-3 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000; 
+}
+.feature-3 {
+  background-color: #eeeeee;
+
+}
+.form h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.search-button {
+  font: inherit;
+  
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  
+  background-color: #8a7a70;
+  border: none; 
+}
+.search-button:hover {
+  background-color: #6d5d53;
+  }
+.search-button:focus {
+  background-color: #615046;
+  color: rgba(255, 255, 255, 0.3)
+    }
+.form-item  {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000; 
+  background-color: #dbd7d4;
+  
+    }
+.form-item input {
+  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000; 
+  background-color: #fafafa;
+  border: none;
+}
+.form-item input:hover {
+  background-color: #ebebeb; 
+}
+.form-item input:focus {
+  background-color: #ffffff; 
+}
+.submit-button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none; 
+}
+.submit-button:hover {
+  background-color: #669ec0;
+  }
+.submit-button:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+  }
+.minus,
+.plus {
+  color: #fafafa;
+  border: none; 
+  background-color: transparent;
+} 
+.minu:hover,
+.plus:hover {
+  color: #000000;
+  } 
+.minu:focus,
+.plus:focus {
+  color: #81b3d2;
+    } 
+.footer-social ul {
+  list-style: none;
+  text-align: center;
+}

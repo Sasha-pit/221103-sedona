@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
    <div class="container">
@@ -19,12 +22,11 @@
         </ul>
       </nav>
     </header>
-    <main class="container-main">
       <div class="caption">
          <img src="img/background_photo.jpg" width="1200" height="800" alt="заголовки">
       </div>
       <section class="description">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h1 class="visually-hidden">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="feature-1">          
@@ -93,48 +95,47 @@
                   <div class="form-item">
                       <label for="check-in-date">Дата заезда:</label>
                       <input type="text" name="check-in-date" id="check-in-date" value="24 апреля">
-                      <span class="calendar">
+                      <span class="calendar visually-hidden">
                           <img src="img/calendar.jpg/50x50">
                       </span>
                   </div>
                   <div class="form-item">
                       <label for="check-out-date">Дата выезда:</label>
                       <input type="text" name="check-out-date" id="check-out-date" value="4 июля 2017">
-                      <span class="calendar">
+                      <span class="calendar  visually-hidden">
                           <img src="img/calendar.jpg/50x50">
                       </span>
                   <div class="column-wrapper">
                       <div class="form-item">
                           <label for="adults">Взрослые:</label>
-                          <button class="minus" type="button">–</button>
+                          <button class="minus  visually-hidden" type="button">–</button>
                           <input type="text" name="adults" value="2" id="adults" class="guest">
-                          <button class="plus" type="button">+</button>
+                          <button class="plus  visually-hidden" type="button">+</button>
                       </div>
                       <div class="form-item">
                           <label for="children" class="child">Дети:</label>
-                          <button class="minus" type="button">–</button>
+                          <button class="minus  visually-hidden" type="button">–</button>
                           <input type="text" name="children" value="0" id="children" class="guest">
-                          <button class="plus" type="button">+</button>
+                          <button class="plus  visually-hidden" type="button">+</button>
                       </div>
                   </div>
                   <button type="submit" class="button submit-button">Найти</button>
               </form>
             </section>    
             <div class="map"><img src="img/map.jpg" width="1200" height="500" alt="Карта"></div>
-          
-    </main>
-    <footer class="main-footer">
+       <footer class="main-footer">
         <div class="footer-social">
           <a href="instagram.html">#visitsedona</a>
           <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Ютьюб</a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Ютьюб</span></a></li>
           </ul>
           <p class="footer-copyright">
               <b>Website by</b>
               <a class="button copyright-button" href="https://htmlacademy.ru">
                   <img src="img/htmlacademy.it/40x20">
+                  <span class="visually-hidden">HTML Academy</span>
               </a>
           </p>
       </div>
