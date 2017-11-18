@@ -9,7 +9,7 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 a {
@@ -140,9 +140,9 @@ a {
   }
 .minus,
 .plus {
-  color: #fafafa;
+  color: #a9a9a9;
   border: none; 
-  background-color: transparent;
+  background-color: #f2f2f2;
 } 
 .minu:hover,
 .plus:hover {
@@ -155,4 +155,100 @@ a {
 .footer-social ul {
   list-style: none;
   text-align: center;
+}
+
+                /*стилизация catalog.html  */
+
+.filters form {
+  background-image: url("img/background_catalog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+ }
+ .filter fieldset {
+  border: none;
+}
+ .filters legend {
+  font-size: 16px;
+  line-height: 21px;
+}
+.filter ul {
+  list-style: none;
+}
+.input-hidden:disabled + label {
+opacity: 0.5;
+} 
+.search-submit-btn {
+border: 2px solid #ffffff;
+background: transparent;
+font-size: 14px;
+line-height: 21px;
+color: #ffffff;
+text-transform: uppercase;
+}
+.search-submit-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* не знаю как добавить ползунки */
+.result-list {
+  list-style: none; 
+}
+.count b {
+  font-size: 21px;
+  line-height: 26px; 
+}
+.result-list p {
+  font-size: 12px;
+  line-height: 18px; 
+}
+.btn-sorting  {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline dotted #81b3d2;  
+}
+.btn-sorting:active {
+  color: #81b3d2;
+}
+.btn-sorting:hover {
+color: #81b3d2;
+}
+.btn-sorting:focus {
+  color: #000000;
+  }
+.column-info h3 {
+    font-size: 21px;
+    line-height: 26px; 
+  }
+.second-wrap  {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 100; 
+  }
+.button-info {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.button-info:hover {
+  background-color: #669ec0;
+}
+.button-info:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-booking {
+  color: #ffffff;
+  background-color: #766357;
+}
+.button-booking:hover {
+  background-color: #604e43;
+}
+.button-booking:focus {
+  background-color: #604e43;
+  color: rgba(255, 255, 255, 0.3);
+}
+.raiting {
+  color: #666666;
+  background-color: #f2f2f2;
 }
