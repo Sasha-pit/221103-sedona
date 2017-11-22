@@ -359,9 +359,14 @@ align-items: baseline;
 justify-content: flex-start;
 border-bottom: 1px solid #e5e5e5;
 }
-li.hotel-item  {
+li.hotels-item,
+li.hotels-item-2,
+li.hotels-item-3  {
   border-bottom: 1px solid #e5e5e5;
   display: flex; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .column-stars {
   display: flex;
