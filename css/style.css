@@ -320,6 +320,10 @@ input[type="radio"].visually-hidden {
   align-items: baseline;
   padding-top: 58px;
 }
+.features-list {
+     display: flex;
+    justify-content: space-around;
+}
 div.footer-social {
   display: flex;
     flex-wrap: wrap;
