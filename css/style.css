@@ -55,18 +55,21 @@ a {
   margin-bottom: 32px;
 }
 
-.caption::before {
-  content: "";
-  color: #000;
+.text {
+  position: relative;
+  z-index: 2;
+  top: -703px;
+  left: 371px;
 }
 
 .caption {
+  position: relative;
   margin-bottom: 48px;
 }
 
 .caption::after {
-  content: "";
-  color: #f00;
+  content: " ";
+  background: url(img/triangle.png);
 }
 
 .feature-1,
@@ -226,9 +229,17 @@ a {
 
 /* стилизация catalog.html */
 
+section.filters {
+  background-image: url(img/background_catalog.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 17%;
+  background-color: #81b3d2;
+  padding-top: 26px;
+  padding-bottom: 15px;
+}
+
 .filters form {
   display: flex;
-  background: cadetblue;
   justify-content: flex-start;
   color: #fff;
   height: 218px;
@@ -255,6 +266,22 @@ fieldset.appart-options {
 
 .option {
   margin-top: 20px;
+}
+
+.options-checkbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 0;
+  left: 0;
+}
+
+input[type=checkbox]:checked + .options-checkbox::before {
+  background-image: url(img/checkbox-on.svg);
 }
 
 .filter ul {
@@ -400,8 +427,6 @@ fieldset.appart-options {
   color: #000;
 }
 
-/* не знаю как добавить ползунки */
-
 .result-list {
   list-style: none;
 }
@@ -446,7 +471,7 @@ fieldset.appart-options {
 }
 
 .sort-result-btn path {
-  margin-left: 510px;
+  margin-left: auto;
   fill: #cacaca;
 }
 
@@ -472,6 +497,11 @@ fieldset.appart-options {
   font-size: 14px;
   line-height: 21px;
   font-weight: 100;
+}
+
+b.hotel-type {
+  width: 112px;
+  display: inline-block;
 }
 
 .button-info {
@@ -579,6 +609,9 @@ ul.service-list {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  margin: 0;
+  padding: 0;
+  padding-top: 56px;
 }
 
 .service-item {
@@ -594,6 +627,7 @@ ul.service-list {
   align-items: center;
   margin-top: -58px;
   margin-bottom: 50px;
+  padding-top: 48px;
 }
 
 .form p {
@@ -640,7 +674,7 @@ ul.social-links {
   justify-content: space-between;
   width: 150px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 0 0 26px;
 }
 
 .social-button {
@@ -673,7 +707,7 @@ ul.social-links {
 }
 
 .copyright-button:hover path {
-  fill: #81b3d2; 
+  fill: #81b3d2;
 }
 
 .copyright-button:focus path {
@@ -690,6 +724,8 @@ ul.result-list {
   align-items: baseline;
   justify-content: flex-start;
   border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0;
 }
 
 li.hotels-item,
